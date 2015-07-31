@@ -4,6 +4,15 @@ module.exports = function(environment) {
   var ENV = {
     modulePrefix: 'globelabs-api',
     environment: environment,
+    contentSecurityPolicy: {
+    'default-src': "'none'",
+    'script-src': "'self' 'unsafe-inline' 'unsafe-eval' use.typekit.net connect.facebook.net maps.googleapis.com maps.gstatic.com",
+    'font-src': "'self' fonts.gstatic.com data:",
+    'connect-src': "'self'",
+    'img-src': "'self' www.facebook.com p.typekit.net",
+    'style-src': "'self' 'unsafe-inline' https://fonts.googleapis.com/css?family=Lato:400",
+    'frame-src': "s-static.ak.facebook.com static.ak.facebook.com www.facebook.com"
+    },
     baseURL: '/',
     locationType: 'auto',
     EmberENV: {
