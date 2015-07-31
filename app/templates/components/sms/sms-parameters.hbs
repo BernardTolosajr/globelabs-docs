@@ -1,0 +1,36 @@
+<h4>Resource Parameters</h4>
+<table class="ui selectable inverted table">
+<thead>
+  <tr>
+    <th>Parameter name</th>
+    <th>Description</th>
+    <th>Usage</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td>message</td>
+    <td>(string) must be provided within the outboundSMSTextMessage element.
+Currently, the API implementation is limited a maximum of 160 characters.</td>
+    <td>Required</td>
+  </tr>
+  <tr>
+    <td>address</td>
+    <td>is the subscriber MSISDN (mobile number), including the ‘tel:’ identifier. Parameter format can include the ‘+’ followed by country code  +639xxxxxxxxx or 09xxxxxxxxx</td>
+    <td>Required</td>
+  </tr>
+  <tr>
+    <td>sender_address</td>
+    <td>(string)  refers to the application short code suffix (last 4 digits)</td>
+    <td>Required</td>
+  </tr>
+  <tr>
+    <td>access_token</td>
+    <td>(string) which contains security information for transacting with a subscriber. Subscriber needs to grant an app first via SMS or Web Form Subscriber Consent Workflow.</td>
+    <td>Required</td>
+  </tr>
+    <td>client_correlator</td>
+    <td>(string) uniquely identifies this create SMS request. If there is a communication failure during the request, using the same clientCorrelator when retrying the request allows the operator to avoid sending the same SMS twice.</td>
+    <td>Optional</td>
+</tbody>
+</table>

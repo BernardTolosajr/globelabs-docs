@@ -7,6 +7,11 @@ var Router = Ember.Router.extend({
 
 Router.map(function() {
   this.route('introduction');
+  this.resource('sms', function() {
+    this.route('ruby');
+    this.route('node');
+    this.route('curl');
+  });
 });
 
 export default Router;

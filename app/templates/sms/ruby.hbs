@@ -1,0 +1,26 @@
+<div class="ui grid">
+  <div class="six wide column">
+  <div class="main container">
+    {{sms/sms-intro}}
+    </div>
+  </div>
+
+  <div class="ten wide column color">
+    {{code-menu}}
+
+    <div class="code-request">
+      <h4>Example Request</h4>
+      {{code-highlight lang='ruby' file=file}}
+
+      {{sms/sms-parameters}}
+
+      <br/>
+      {{sms/sms-response}}
+
+      <br/>
+      <br/>
+      <h4>Receiving SMS</h4>
+      {{sms/sms-receiving}}
+     </div>
+  </div>
+</div>

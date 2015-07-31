@@ -1,9 +1,16 @@
 /* jshint node: true */
+var fs = require('fs');
 
 module.exports = function(environment) {
   var ENV = {
     modulePrefix: 'globelabs-api',
     environment: environment,
+    languages: fs.readdirSync('node_modules/highlight.js/lib/languages').map(function(language) {
+      return language.replace(/\.js$/, '');
+    }),
+    emberHighlightJs: {
+      style: 'agate'
+    },
     contentSecurityPolicy: {
     'default-src': "'none'",
     'script-src': "'self' 'unsafe-inline' 'unsafe-eval' use.typekit.net connect.facebook.net maps.googleapis.com maps.gstatic.com",
