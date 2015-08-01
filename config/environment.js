@@ -9,7 +9,7 @@ module.exports = function(environment) {
       return language.replace(/\.js$/, '');
     }),
     emberHighlightJs: {
-      style: 'agate'
+      style: 'arta'
     },
     contentSecurityPolicy: {
     'default-src': "'none'",
