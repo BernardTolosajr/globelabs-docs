@@ -1,7 +1,9 @@
 import Ember from 'ember';
 
 export default Ember.Route.extend({
-  beforeModel: function() {
-    this.transitionTo('introduction');
+  beforeModel: function(transition) {
+    if (transition.targetName === 'index') {
+      this.transitionTo('introduction');
+    }
   }
 });

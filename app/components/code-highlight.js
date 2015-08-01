@@ -1,7 +1,11 @@
 import Ember from 'ember';
 import config from 'globelabs-api/config/environment';
 
-var Highlight = require('highlight.js');
+//var Highlight = require('highlight.js');
+import {
+ highlightAuto,
+ highlight
+} from 'highlight.js';
 
 function range(start, count) {
   return Array.apply(0, new Array(count))
@@ -29,9 +33,9 @@ export default Ember.Component.extend({
 
     if (!lang) { throw new Error('highlight-js lang property must be set'); }
     if (lang === 'auto') {
-      return Highlight.highlightAuto(code).value;
+      return highlightAuto(code).value;
     } else {
-      return Highlight.highlight(lang, code).value;
+      return highlight(lang, code).value;
     }
   }).readOnly()
 });

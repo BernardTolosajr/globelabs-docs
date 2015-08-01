@@ -35,10 +35,11 @@
     "ember-data": "1.13.5",
     "ember-disable-proxy-controllers": "^1.0.0",
     "ember-export-application-global": "^1.0.2",
+    "ember-highlight-js": "^0.2.0",
     "highlight.js": "^8.4.0",
     "semantic-ui-ember": "0.0.1"
   },
   "dependencies": {
-    "highlight.js": "^8.7.0"
+    "broccoli-stew": "^0.3.5"
   }
 }
