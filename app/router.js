@@ -12,6 +12,12 @@ Router.map(function() {
     this.route('node');
     this.route('curl');
   });
+
+  this.resource('charging', function() {
+    this.route('ruby');
+    this.route('node');
+    this.route('curl');
+  });
 });
 
 export default Router;
