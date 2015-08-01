@@ -37,5 +37,8 @@
     "ember-export-application-global": "^1.0.2",
     "highlight.js": "^8.4.0",
     "semantic-ui-ember": "0.0.1"
+  },
+  "dependencies": {
+    "highlight.js": "^8.7.0"
   }
 }
