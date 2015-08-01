@@ -1,6 +1,6 @@
 # Globelabs-api site
 
-[Globe Labs API](globelabs-api.herokuapp.com)
+[Globe Labs API](https://globelabs-api.herokuapp.com/)
 
 ## Prerequisites
 
