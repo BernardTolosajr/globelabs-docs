@@ -5,7 +5,7 @@ export default Ember.Controller.extend({
     return `
     require_once __DIR__ . '/../vendor/autoload.php';
 
-    use Globelabs\SMS;
+    use Globelabs\\SMS;
 
     $options = [
       'sender_address' => '{your_sender_address}',

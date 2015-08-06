@@ -5,7 +5,7 @@ export default Ember.Controller.extend({
     return `
   require_once __DIR__ . '/../vendor/autoload.php';
 
-    use Globelabs\Charging;
+    use Globelabs\\Charging;
     $options = [
       'amount' => '1',
       'description' => 'Allowance',
