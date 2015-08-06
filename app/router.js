@@ -11,12 +11,14 @@ Router.map(function() {
     this.route('ruby');
     this.route('node');
     this.route('curl');
+    this.route('php');
   });
 
   this.resource('charging', function() {
     this.route('ruby');
     this.route('node');
     this.route('curl');
+    this.route('php');
   });
 });
 

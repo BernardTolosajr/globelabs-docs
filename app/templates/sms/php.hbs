@@ -1,19 +1,16 @@
 <div class="ten wide column color">
   <div class="code-request">
     <h4>Installation</h4>
+    The recommended way to install Globelabs is through <a href="https://getcomposer.org/">Composer</a>
     <h5 class="ui grey header">
-    gem 'globelabs-sms'
+    curl -sS https://getcomposer.org/installer | php
     </h5>
-    And then execute:
+    Next, run the Composer command to install the latest stable version of Globelabs:
     <h5 class="ui grey header">
-    $ bundle
-    </h5>
-    Or install it yourself as:
-    <h5 class="ui grey header">
-    gem install globelabs-sms
+    composer.phar require rsupan/globelabs dev-master
     </h5>
     <h4>Example Request</h4>
-    {{code-highlight lang='ruby' file=file}}
+    {{code-highlight lang='php' file=file}}
 
     {{sms/sms-parameters}}
 
